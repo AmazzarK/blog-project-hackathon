@@ -1,42 +1,64 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Roboto:wght@400;500&display=swap');
+
+.about-section {
+  padding: 3rem 1rem;
   text-align: center;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  max-width: 900px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Roboto', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.section-title {
+  font-family: 'Roboto Slab', serif;
+  font-size: 2.5rem;
+  color: #222;
+  margin-bottom: 0.5rem;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.section-description {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 2rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.friends-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
 }
 
-.card {
-  padding: 2em;
+.friend-card {
+  background-color: #fff;
+  padding: 1.5rem 1rem;
+  border-radius: 12px;
+  width: 220px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
 }
 
-.read-the-docs {
-  color: #888;
+.friend-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.friend-name {
+  font-size: 1.4rem;
+  color: #111;
+  margin-bottom: 0.3rem;
+}
+
+.friend-role {
+  font-weight: 500;
+  color: #777;
+  margin-bottom: 0.7rem;
+}
+
+.friend-description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
 }
